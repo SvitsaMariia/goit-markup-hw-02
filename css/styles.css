@@ -40,11 +40,14 @@ body {
 .list {
     list-style: none;
 }
- .link {
+.link {
     text-decoration: none;
  }
-.nav-list .item:active {
-    color: var(--accent-color);
+.nav-list .item:hover,
+.nav-list .item:focus,
+.address-list .item:hover,
+.address-list .item:focus {
+    color: var(--accent-color);   
 }
 .nav-list .item {
     font-weight: 500;
@@ -60,9 +63,6 @@ body {
     color: var(--title-text-color);
     letter-spacing: 0.02em;
 }
-.address-list .item:active {
-    color: var(--accent-color);
-}
 /* MAIN */
 .visually-hidden {
     position: absolute;
@@ -77,11 +77,12 @@ body {
     overflow: hidden;
 }
 .hero {
-    font-weight: 700;
-    font-size: 56px;
+    background-color: var(--title-text-color);
+}
+.hero-title {
+    font-size: 56px; 
     line-height: 1.07;
     color: var(--primary-bg-color);
-    background-color: var(--title-text-color);
     letter-spacing: 0.02em;
 }
 .hero-button {
@@ -102,17 +103,8 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-/* main examples */
-.examples h2{
-    font-weight: 700;
-    font-size: var(--title-font-size);
-    line-height: 1.11;
-    color: var(--title-text-color);
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-}
-/* main our team */
-.team .title {
+/* main examples and team */
+.section-title {
     font-weight: 700;
     font-size: var(--title-font-size);
     line-height: 1.11;
@@ -122,17 +114,15 @@ body {
 }
 .name {
     font-weight: 500;
-    font-size: var(--body-font-size);
+    font-size: 20px;
     line-height: 1.2;
     color: var(--title-text-color);
     letter-spacing: 0.02em;
 }
 .job-title {
-    font-weight: 400;
     font-size: var(--body-font-size); 
     line-height: 1.5;
     letter-spacing: 0.02em;
-    background-color: var(--secondary-bg-color);
 }   
 /* button */
 button {
@@ -169,6 +159,9 @@ footer {
     background-color: var(--title-text-color);
 }
 footer p {
+    font-size: var(--body-font-size);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     color: var(--secondary-accent-color);
 }
 .logo-footer {
