@@ -51,14 +51,12 @@ body {
 }
 .nav-list .item {
     font-weight: 500;
-    font-size: var(--body-font-size);
     line-height: 1.5;
     color: var(--title-text-color);
     letter-spacing: 0.02em;
 }
 .address-list .item {
     font-style: normal;
-    font-size: var(--body-font-size);
     line-height: 1.5;
     color: var(--title-text-color);
     letter-spacing: 0.02em;
@@ -99,7 +97,6 @@ body {
     letter-spacing: 0.02em;
 }
 .work-description {
-    font-size: var(--body-font-size);
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
@@ -120,12 +117,11 @@ body {
     letter-spacing: 0.02em;
 }
 .job-title {
-    font-size: var(--body-font-size); 
     line-height: 1.5;
     letter-spacing: 0.02em;
 }   
 /* button */
-button {
+.filters-button {
   font-family: inherit;
   font-weight: 500;
   font-size: var(--body-font-size);
@@ -150,15 +146,14 @@ button:focus {
     color: var(--title-text-color);
 }
 .industry {
-    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 /* FOOTER */
-footer {
+.footer {
     background-color: var(--title-text-color);
 }
-footer p {
+.footer-description {
     font-size: var(--body-font-size);
     line-height: 1.5;
     letter-spacing: 0.02em;
